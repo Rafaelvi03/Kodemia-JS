@@ -53,8 +53,7 @@ function num(numero){
 console.log(num(5));
 console.log(num(2));
 
-  
-
+//Tarea Fin De semana
 
 
 
