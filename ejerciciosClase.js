@@ -57,4 +57,44 @@ console.log(num(2));
 
 
 
+// Tarea devolver objeto mayor a menor
+//Retornar un objeto con los nombres de los usuarios ordenados por edad, de mayor a menor
+
+const users = [{name: 'aldo', age: 18}, {name: 'magaly', age: 30},{name: 'alfonso', age: 20}, {name: 'jesus', age: 50}, {name: 'alberto', age: 10}];
+users.sort( (a, b) => {
+  if(a || b < 18){
+   return 0;
+  }
+  if(a.age < b.age) {
+    return -1;
+  }
+  if(a.age > b.age) {
+    return 1;
+  }
+  if (a.name.toLowerCase() < b.name.toLowerCase()) {
+    return -1;
+  }
+  if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    return 1;
+  }
+  return 0;
+});
+console.log(users);
+
+
+
+
+
+
+const result = {
+  0: 'aldo',
+  1: 'magaly',
+  2: 'alfonso',
+  3: 'jesus',
+  4: 'alberto'
+};
+
+
+
+
 

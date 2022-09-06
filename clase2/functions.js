@@ -21,7 +21,7 @@ nombre = "Raul ";
 apellido = "Villa";
 generarNombreCompleto(nombre, apellido);
 
-//expresion
+//expresion no tienen nombre 
 let expresion = function(){
     return true;
 }

@@ -17,8 +17,7 @@ invertirArray();
 const numerosArray = () => {
   let arrayn = [100, 25, 3, 4]; // declaramos el array
   let numMayor = 0;
-  for (
-    i = 0; i < arrayn.length; i++) // recorremos el arreglo
+  for ( i = 0; i < arrayn.length; i++) // recorremos el arreglo
     if (arrayn[i] > numMayor) {
       // Si lo que hay en el arreglo [nuestro indice ] > mayor que numMayor
       numMayor = arrayn[i]; // numMayor es igual a lo que hay en nuestro array, nuestro indice
@@ -30,15 +29,20 @@ numerosArray();
 
 // Ejercicio 3 Crea una funcion que reciba un arreglo que pueda contar cuanto elementos de un arreglo sean mayores  a X valor dado en los parametros
 const elemtosMayoresArray = (num = 40) => {
-  // damos a X un parametro que es 40
-  let array = [20, 60, 30, 70]; // declaramos un array
-  for (
-    let i = 0; i < array.length; i++) // recorremos el array
+  // d  amos a X un parametro que es 40
+  let array = [80, 50, 30, 70]; // declaramos un array
+  let cont=0;
+
+  for ( let i = 0; i < array.length; i++){  // recorremos el array
     if (array[i] > num) {
+     cont++; 
       // Si el array(de lo que recorre mi indice ) >de lo que asignamos a  num  que es el parametro
-      console.log(' Los elementos mayores al valor X en los parametros son : '+' '+ array[i])   // imprimir
+       // imprimir
+         }
     }
+    console.log(' Los elementos mayores al valor X en los parametros son : '+' '+ cont) 
 };
+
 elemtosMayoresArray();
 
 // Ejercicio 4  Crea una funcion que reciba un arreglo de numeros y reciba un arreglo de numeros y regrese la lista de numeros pares que se encuentren en el arreglo
@@ -49,6 +53,7 @@ const numerosPares = () => {
     if (array[i] % 2 === 0) {
       console.log('Los numeros pares son: ' +' '+ array[i]);
     }
+  
   }
 };
 numerosPares();
@@ -57,7 +62,7 @@ numerosPares();
 // falta guardarlo en una variable para que diga num se repitio
 const elementoRepetido = (num = 2) => {
   let array = [2, 2, 2, 2, 4, 5, 6, 7];
-  let resultado = 0;
+  //hacer el contador 
   for (i = 0; i < array.length; i++)
     if (array[i] === num) {
       console.log("Los numeros repetidos son " + array[i]);
@@ -69,8 +74,8 @@ elementoRepetido();
 // se encuentra en el arreglo y false si no se encuentra
 const arregloString = () => {
   let array = ["rafael"];
-  //let nombre ='rafael'; // aqui da True
-  let nombre = "aldo"; // Aqui da False
+  let nombre ='rafael'; // aqui da True
+  //let nombre = "aldo"; // Aqui da False
   for (i = 0; i < array.length; i++)
     if (array[i] != nombre) {
       resultado = array[i] = false;
