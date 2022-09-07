@@ -44,4 +44,4 @@ for (let propiedad in obj){
     for(let elemento of obj[propiedad]){
         console.log(elemento);
     }
-}
+}|

@@ -170,5 +170,5 @@ let annie =19;
 for(let annie = 18; annie <30; annie++){
     console.log('Annie es mayor de edad', annie)
 }
-ny    8i.4bju g
+
 // Buscar for of, for in 
