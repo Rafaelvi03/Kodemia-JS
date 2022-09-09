@@ -108,3 +108,43 @@ let imprimirKoders = (nombre) =>{
 }
 }
 console.log((imprimirKoders('Rafa')));
+
+//13. 13.- generar una función que genere un arreglo a partir de una cadena de texto por ejemplo:
+	// let arreglo = generarArreglo('hola'); 
+	//console.log(arreglo) // ['h', 'o', 'l', 'a']
+
+    let  generarArreglo  = (string)=> string.split('')
+    let arreglo = generarArreglo('hola')
+   console.log( arreglo)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+// 16
+let impresionDeDias = (dia)=> {
+    if (dia == 'lunes'){
+      console.log(0);
+    }else if (dia== 'martes'){
+      console.log(1);
+    }else if(dia == 'miercoles'){
+      console.log(2);
+    }else if(dia == 'jueves'){
+      console.log(3);
+    }else if (dia == 'viernes'){
+      console.log(4);
+    }else if (dia == 'sabado'){
+      console.log(5);
+    }else if (dia == 'domingo'){
+      console.log(6);
+    }
+  }
+  impresionDeDias('jueves')
