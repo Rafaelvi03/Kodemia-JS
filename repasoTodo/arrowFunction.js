@@ -116,8 +116,23 @@ console.log((imprimirKoders('Rafa')));
     let  generarArreglo  = (string)=> string.split('')
     let arreglo = generarArreglo('hola')
    console.log( arreglo)
+/*14.- generar una función que sume todos los números que están dentro de una lista de números, por ejemplo
 
-   
+	let suma = sumarElementos([1,2,3,4,5]); 
+	console.log(suma) 
+*/
+const listaNumeros = [1, 2, 3, 4];
+let  sumar = (valor1, valor2) => valor1 + valor2;
+console.log(listaNumeros.reduce(sumar));
+
+/*15.- generar una función que quite todos los números que sean mayores al numero 10 de una lista de números, por ejemplo
+
+	let nuevoArreglo = limpiarArreglo([11,12,3,4,15,5,8,10,20,1,2]); 
+	console.log(nuevoArreglo) // [3,4,5,8,10,1,2]*/
+  
+ 
+
+|
 
 
 
@@ -127,9 +142,15 @@ console.log((imprimirKoders('Rafa')));
 
 
 
+/*16.- generar una función que imprima el numero de día de la semana según el día que reciba, por ejemplo 
 
-
-// 16
+	recibimos 'lunes' entonces imprimira 0 
+	recibimos 'martes' entonces imprimira 1 
+	recibimos 'miércoles' entonces imprimira 2 
+	recibimos 'jueves' entonces imprimira 3 
+	recibimos 'viernes' entonces imprimira 4
+	recibimos 'sábado' entonces imprimira 5
+	recibimos 'domingo' entonces imprimira 6  */
 let impresionDeDias = (dia)=> {
     if (dia == 'lunes'){
       console.log(0);

@@ -68,3 +68,6 @@ querySelector(Nos ayuda a buscar selectores mas complejos)
 Los modulos se hacen con import y export      
 
 // recursion es una funcion que se manda a llamar con otro valor 
+
+
+//investigar spreat operator para objetos 
