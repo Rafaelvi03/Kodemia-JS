@@ -71,3 +71,6 @@ Los modulos se hacen con import y export
 
 
 //investigar spreat operator para objetos 
+
+// Una base de datos es donde un objeto se guarda
+Cuando guarda más de uno se le llama coleccion 
